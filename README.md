@@ -1,5 +1,5 @@
 # SpiceMerchant
-A GOAP system case implementation from the modern game algorithm course.
+A [GOAP (Goal Oriented Action Planning)](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793) AI system case implementation from the modern game algorithm course.
 
 ### General:
 #### A brief description of what this project is actually demoing
@@ -18,15 +18,24 @@ The player-agent begins next to the caravan, and has an inventory that allows ca
 one time. The caravan has unlimited capacity, and traders have unlimited supply.
 
 ### A quick demonstration:
-To set the goal as "having 2 of each spice at the end", we do the following implementation:
+To set the goal as "having 2 of Tu(Turmeric) and Sa(Saffron) at the end", we do the following implementation:
+(Similar as the worldData implementation, which we have to listen and update each frame)
 
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/goal_implementation.png" width="80%" height="80%">
   
+Then, through our GOAP system, it should return a full plan telling us what concrete actions we should execute in sequence to satisfy the goal action.
+  
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/planFound.png">
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width="60%" height="60%">
+We can see that the red cylinder (stands for the merchant here) is moving to the Trader 1 first, the Text UI updated as well
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width="60%" height="60%">
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width="70%" height="70%">
+  
+Then Trader 2 and we successfully got 1 Sa by giving out 2 Tu
+
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width="70%" height="70%">
+  
+Then the merchant goes back to the caravan and drop 2 Tu to satisfy the first goal, then it will be taking the rest of the actions to satisfy the second action. The standing positions for all traders are generated randomly at runtime.
 
 ### Source Code:
 * Part of the GOAP code skeleton is implemented by @sploreg, I modified some detailed for this specific case.
