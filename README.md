@@ -2,26 +2,31 @@
 A GOAP system case implementation from the modern game algorithm course.
 
 ### General:
-* The main purpose of this research project is to establish an idea to make a zig-zag path smooth and human-like.
-* To have a detailed explanation about this project and how I approach, please visit the report named "Human-Like Path Finding Algorithm Based on Classic A*"
-* A much more detailed report about the ideas/algorithm working can be found [here](https://github.com/YuzhouGuo/humanLikePathFinding/blob/master/Human-Like%20Path%20Algorithm%20Based%20on%20A_.pdf).
+#### A brief description of what this project is actually demoing
+In this system, there is one spice merchant and eight traders doing business following certain rules. The ultimate goal of the player-agent is to store 2 of each spice in the caravan. Spices are acquired by trading different 20 spices between the traders. Each trader accepts a type of spice and returns another type.
+
+* Trader 1: Gives you 2 turmeric units.
+* Trader 2: Takes 2 Turmeric units and gives you 1 Saffron unit.
+* Trader 3: Takes 2 Saffron units and gives you 1 Cardamom unit.
+* Trader 4: Takes 4 Turmeric units and gives you 1 Cinnamon.
+* Trader 5: Takes 1 Cardamom and 1 Turmeric and gives you 1 Cloves unit.
+* Trader 6: Takes 2 Turmeric, 1 Saffron and 1 Cinnamon and gives 1 Pepper unit.
+* Trader 7: Takes 4 Cardamom units and gives you 1 Sumac unit.
+* Trader 8: Takes 1 Saffron, 1 Cinnamon and 1 Cloves unit and gives you 1 Sumac unit.
+
+The player-agent begins next to the caravan, and has an inventory that allows carrying at most 4 units of spice at any
+one time. The caravan has unlimited capacity, and traders have unlimited supply.
 
 ### A quick demonstration:
-Here is an animation from the p5 framework to check out: [Click me!](https://editor.p5js.org/guoyuzhou004@gmail.com/full/1NNJFJHAW)
+To set the goal as "having 2 of each spice at the end", we do the following implementation:
 
-To show the result of this research/project, we choose a relatively larger map for testing. And here is a brutal presentation of the project:
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/master/GitHub_Demos/Screen Shot 2020-10-06 at 12.32.00 AM.png">
+  
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/master/GitHub_Demos/Screen Shot 2020-10-02 at 12.47.32 AM.png">
 
-* Stage one (the classic A* algorithm without any adjustment)
+  <img src="https://github.com/YuzhouGuo/humanLikePathFinding/blob/master/Screen Shot 2020-10-02 at 12.46.41 AM.png>
 
-  <img src="https://github.com/YuzhouGuo/humanLikePathFinding/blob/master/stage1.png" width="400" height="400">
-
-* Stage two (based on A*, with wall-avoiding algorithm added, you can see that the path is now trying to get to the middle of the path so that it is more human-like)
-
-  <img src="https://github.com/YuzhouGuo/humanLikePathFinding/blob/master/stage2.png" width="400" height="400">
-
-* Stage three (with advanced wall-avoiding strategy, and Bezier curve applied, visually more smooth)
-
-  <img src="https://github.com/YuzhouGuo/humanLikePathFinding/blob/master/stage3.png" width="400" height="400">
+  <img src="https://github.com/YuzhouGuo/humanLikePathFinding/blob/master/Screen Shot 2020-10-02 at 12.46.51 AM.png>
 
 ### Source Code:
-* The source code for this project is just the sourceCode.js file, with default HTML and CSS code provided by the p5 framework online editor.
+* Part of the GOAP code skeleton is implemented by @sploreg, I modified some detailed for this specific case.
