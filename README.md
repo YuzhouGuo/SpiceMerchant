@@ -1,5 +1,5 @@
 # SpiceMerchant
-A [GOAP (Goal Oriented Action Planning)](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793) AI system case implementation from the modern game algorithm course.
+A [GOAP (Goal Oriented Action Planning)](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793)(based on Finite State Machine) AI system case implementation from the modern game algorithm course.
 
 ### General:
 #### A brief description of what this project is actually demoing
@@ -27,12 +27,16 @@ Then, through our GOAP system, it should return a full plan telling us what conc
   
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/planFound.png">
   
+To take a deep look at the first action we are gonna take from the correcponding file, basically we have to move to the trader 1's position and update the number of Tumeric from the backpack component.
+
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/traderOnePerform.png" width="80%" height="80%">
+
 The standing positions for all traders are generated randomly at runtime. 
-We can see that the red cylinder (stands for the merchant here) is moving to the Trader 1 first, the Text UI updated itself as well
+We can see that the red cylinder (stands for the merchant here) is moving to the Trader 1 first, the Text UI updated itself as well.
 
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width="70%" height="70%">
   
-Then Trader 2 and we successfully got 1 Sa by giving out 2 Tu
+Then Trader 2 and we successfully got 1 Sa by giving out 2 Tu.
 
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width="70%" height="70%">
   
