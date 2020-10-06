@@ -20,13 +20,13 @@ one time. The caravan has unlimited capacity, and traders have unlimited supply.
 ### A quick demonstration:
 To set the goal as "having 2 of each spice at the end", we do the following implementation:
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/goal_implementation.png">
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/goal_implementation.png" width="80%" height="80%">
   
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/planFound.png">
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width="80%" height="80%">
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width="60%" height="60%">
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width="80%" height="80%">
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width="60%" height="60%">
 
 ### Source Code:
 * Part of the GOAP code skeleton is implemented by @sploreg, I modified some detailed for this specific case.
