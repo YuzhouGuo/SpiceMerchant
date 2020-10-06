@@ -26,8 +26,9 @@ To set the goal as "having 2 of Tu(Turmeric) and Sa(Saffron) at the end", we do 
 Then, through our GOAP system, it should return a full plan telling us what concrete actions we should execute in sequence to satisfy the goal action.
   
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/planFound.png">
-
-We can see that the red cylinder (stands for the merchant here) is moving to the Trader 1 first, the Text UI updated as well
+  
+The standing positions for all traders are generated randomly at runtime. 
+We can see that the red cylinder (stands for the merchant here) is moving to the Trader 1 first, the Text UI updated itself as well
 
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width="70%" height="70%">
   
@@ -35,7 +36,9 @@ Then Trader 2 and we successfully got 1 Sa by giving out 2 Tu
 
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width="70%" height="70%">
   
-Then the merchant goes back to the caravan and drop 2 Tu to satisfy the first goal, then it will be taking the rest of the actions to satisfy the second action. The standing positions for all traders are generated randomly at runtime.
+Then the merchant goes back to the caravan and drop 2 Tu to satisfy the first goal, then it will be taking the rest of the actions to satisfy the second action. 
+
+The NavMesh navigation system from Unity was used to move agents.
 
 ### Source Code:
 * Part of the GOAP code skeleton is implemented by @sploreg, I modified some detailed for this specific case.
