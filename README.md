@@ -24,9 +24,9 @@ To set the goal as "having 2 of each spice at the end", we do the following impl
   
   <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/planFound.png">
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width=400 height=300>
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabTwoTu.png" width=600 height=400>
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width=400 height=300>
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/grabOneSa.png" width=600 height=400>
 
 ### Source Code:
 * Part of the GOAP code skeleton is implemented by @sploreg, I modified some detailed for this specific case.
