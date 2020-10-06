@@ -29,7 +29,7 @@ Then, through our GOAP system, it should return a full plan telling us what conc
   
 To take a deep look at the first action we are gonna take from the correcponding file, basically we have to move to the trader 1's position and update the number of Tumeric from the backpack component.
 
-  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/traderOnePerform.png" width="80%" height="80%">
+  <img src="https://github.com/YuzhouGuo/SpiceMerchant/blob/main/GitHub_Demos/traderOnePerform.png" width="70%" height="70%">
 
 The standing positions for all traders are generated randomly at runtime. 
 We can see that the red cylinder (stands for the merchant here) is moving to the Trader 1 first, the Text UI updated itself as well.
